@@ -1,9 +1,9 @@
 const productos = [
-    { id: 1, nombre: 'Coca Cola', precio: 3.3 },
-    { id: 2, nombre: 'Pepsi', precio: 1.5 },
-    { id: 3, nombre: 'Fanta', precio: 2 },
-    { id: 4, nombre: 'Sprite', precio: 2.5 },
-    { id:5, nombre: 'Inca Kola', precio:3.5}
+    { id: 1, nombre: 'Coca Cola', precio: 3.3, url: 'https://www.coca-cola.com/content/dam/onexp/sv/es/brands/coca-cola/7840058006509.png' },
+    { id: 2, nombre: 'Pepsi', precio: 1.5, url:'https://dojiw2m9tvv09.cloudfront.net/53648/product/sintitulo8148.png'},
+    { id: 3, nombre: 'Fanta', precio: 2, url:'https://unomasuno.pe/wp-content/uploads/2021/11/paci-1424.png' },
+    { id: 4, nombre: 'Sprite', precio: 2.5, url:'https://wongfood.vtexassets.com/arquivos/ids/694304-800-auto?v=638458833872900000&width=800&height=auto&aspect=true' },
+    { id:5, nombre: 'Inca Kola', precio:3.5, url:'https://unomasuno.pe/wp-content/uploads/2021/11/paci-6178.png'}
 ];
 
 let carrito = [];
@@ -19,7 +19,7 @@ function mostrarProductos(){
     div.innerHTML = '<h3>' + producto.nombre + '</h3>' + 
     '<p>' + producto.precio + '</p>'+
     '<button onclick="agregarCarrito('+ producto.id +')"> Agregar al carrito </button>'
-    +'<img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Promart_logo_2019.svg">'
+    +'<img src="'+producto.url+'">';
     contenedor.appendChild(div);
 
 });
