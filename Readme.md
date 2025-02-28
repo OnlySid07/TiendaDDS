@@ -1,5 +1,5 @@
 #Tienda DDS
-#Integrantes
-#-Josue Campaña Mendoza
-#-
-#-
+Integrantes
+-Josue Campaña Mendoza
+-
+-
