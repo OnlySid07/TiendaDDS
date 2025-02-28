@@ -27,6 +27,12 @@ function agregarCarrito(id) {
     actualizarCarrito();
 }
 
+//Eliminar del carrito
+function eliminarDelCarrito(index){
+    carrito.splice(index,1)
+    actualizarCarrito();
+}
+
 
 // Es para mostrar mi lista de compras
 
