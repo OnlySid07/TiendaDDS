@@ -14,7 +14,7 @@ function mostrarProductos(){
     div.classList.add("product");
     div.innerHTML = '<h3>' + producto.nombre + '</h3>' + 
     '<p>' + producto.precio + '</p>'+
-    Image('<img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Promart_logo_2019.svg">') ;
+    '<img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Promart_logo_2019.svg">'
     contenedor.appendChild(div);
 
 });
