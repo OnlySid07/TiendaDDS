@@ -21,30 +21,25 @@ function mostrarProductos(){
 });
 }
 
-function agregarCarrito (id){
-    let producto = productos.find(producto => producto.id === id);
+function agregarCarrito(id) {
+    let producto = productos.find(p => p.id === id);
     carrito.push(producto);
+    actualizarCarrito();
 }
-
-
-
-
 
 
 // Es para mostrar mi lista de compras
 
-function actualizarCarrito(){
+function actualizarCarrito() {
     const listaCarrito = document.getElementById("listaCarrito");
-    const totalElmento = document.getElementById("total")
-
-    listaCarrito.innerHTML = '';
-
-    let total = 0; 
-    carrito.forEach(producto, index => {
+    const totalElemento = document.getElementById("total");
+    listaCarrito.innerHTML = "";
+    let total = 0;
+    carrito.forEach((producto, index) => {
+        total += producto.precio;
         let li = document.createElement("li");
-        li.innerHTML = producto.nombre + ' - ' + producto.precio+ ' <button onclick="eliminarProducto('+ index +')">Eliminar</button>';
-        
+        li.innerHTML = `${producto.nombre} - $${producto.precio} <button onclick="eliminarDelCarrito(${index})">Eliminar</button>`;
         listaCarrito.appendChild(li);
-        //total += producto.precio;
     });
+    totalElemento.innerText = total;
 }
