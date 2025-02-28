@@ -1,5 +1,9 @@
 const productos = [
-    { id: 1, nombre: 'Producto 1', precio: 100 },
+    { id: 1, nombre: 'Coca Cola', precio: 3.3 },
+    { id: 2, nombre: 'Pepsi', precio: 1.5 },
+    { id: 3, nombre: 'Fanta', precio: 2 },
+    { id: 4, nombre: 'Sprite', precio: 2.5 },
+    { id:5, nombre: 'Inca Kola', precio:3.5}
 ];
 
 let carrito = [];
