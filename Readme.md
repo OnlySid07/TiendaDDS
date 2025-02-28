@@ -41,7 +41,7 @@ Este es un proyecto de tienda virtual simple utilizando **HTML, CSS y JavaScript
 ## Integrantes
 
 - [Josue Campaña Mendoza]
-- []
+- [Jose Antonio Velasquez]
 - []
 
 ## Enlace al Proyecto
