@@ -40,4 +40,11 @@ function actualizarCarrito(){
     listaCarrito.innerHTML = '';
 
     let total = 0; 
+    carrito.forEach(producto, index => {
+        let li = document.createElement("li");
+        li.innerHTML = producto.nombre + ' - ' + producto.precio+ ' <button onclick="eliminarProducto('+ index +')">Eliminar</button>';
+        
+        listaCarrito.appendChild(li);
+        //total += producto.precio;
+    });
 }
