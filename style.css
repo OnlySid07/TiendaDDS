@@ -1,5 +1,37 @@
 
-    body { font-family: Arial, sans-serif; text-align: center; }
+body { font-family: Arial, sans-serif; text-align: center; }
+
 #products { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-.product { border: 1px solid #ddd; padding: 10px; width: 200px; }
-.product img { width: 100%; height: auto; }
+
+    .product { border: 1px solid #ddd; padding: 10px; width: 200px; }
+    .product img { width: 100%; height: auto; }
+
+    .Carrito {
+        padding: 20px; /* Espaciado interno */
+        border: 1px solid #ddd; /* Borde sutil */
+        border-radius: 10px; /* Bordes redondeados */
+        max-width: 300px; /* Ajuste de ancho */
+        background: #f9f9f9; /* Fondo claro */
+        margin: 20px auto; /* Centrado */
+    }
+    
+    .Carrito h2 {
+        margin-bottom: 15px; /* Espacio debajo del título */
+        text-align: center;
+    }
+    
+    #listaCarrito {
+        margin-bottom: 15px; /* Espacio debajo de la lista */
+        padding-left: 20px; /* Espaciado interno en la lista */
+    }
+    
+    
+    #total {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+   
+    

@@ -49,6 +49,7 @@ function actualizarCarrito() {
         total += producto.precio;
         let li = document.createElement("li");
         li.innerHTML = `${producto.nombre} - $${producto.precio} <button onclick="eliminarDelCarrito(${index})">Eliminar</button>`;
+        li.style.marginBottom= "10px";
         listaCarrito.appendChild(li);
     });
     totalElemento.innerText = total;
