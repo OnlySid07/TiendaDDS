@@ -57,12 +57,13 @@ function actualizarCarrito() {
 
 function realizarCompra() {
     // Obtener el monto requerido del carrito
-    const montoRequeridoElemento = document.getElementById("total-carrito");
-    const montoRequerido = document.getElementById(montoRequeridoElemento);
+    const totalElemento = document.getElementById("total");
+    const totalTexto = totalElemento.textContent.replace(" Soles", ""); // Eliminar " Soles"
+    const montoRequerido = parseFloat(totalTexto);
   
-    // Obtener el monto del valor puesto 
+    // Obtener el monto del valor puesto
     const montoPuestoElemento = document.getElementById("monto-puesto");
-    const montoPuesto = document.getElementById("montoPuestoElemento.value");
+    const montoPuesto = parseFloat(montoPuestoElemento.value);
   
     // Verificar si los montos son números válidos
     if (isNaN(montoRequerido) || isNaN(montoPuesto)) {
