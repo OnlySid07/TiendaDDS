@@ -54,3 +54,29 @@ function actualizarCarrito() {
     });
     totalElemento.innerText = total;
 }
+
+function realizarCompra() {
+    // Obtener el monto requerido del carrito
+    const montoRequeridoElemento = document.getElementById("total-carrito");
+    const montoRequerido = document.getElementById(montoRequeridoElemento);
+  
+    // Obtener el monto del valor puesto 
+    const montoPuestoElemento = document.getElementById("monto-puesto");
+    const montoPuesto = parseFloat(montoPuestoElemento.value);
+  
+    // Verificar si los montos son números válidos
+    if (isNaN(montoRequerido) || isNaN(montoPuesto)) {
+      alert("Por favor, ingresa montos válidos.");
+      return;
+    }
+  
+    // Comparar los montos y mostrar el resultado
+    if (montoPuesto >= montoRequerido) {
+      alert("Compra realizada");
+    } else {
+      alert("Compra fallida");
+    }
+  }
+  
+  const botonComprar = document.getElementById("realizar-compra");
+  botonComprar.addEventListener("click", realizarCompra);
