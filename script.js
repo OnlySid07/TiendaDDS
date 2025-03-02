@@ -62,7 +62,7 @@ function realizarCompra() {
   
     // Obtener el monto del valor puesto 
     const montoPuestoElemento = document.getElementById("monto-puesto");
-    const montoPuesto = parseFloat(montoPuestoElemento.value);
+    const montoPuesto = document.getElementById("montoPuestoElemento.value");
   
     // Verificar si los montos son números válidos
     if (isNaN(montoRequerido) || isNaN(montoPuesto)) {
