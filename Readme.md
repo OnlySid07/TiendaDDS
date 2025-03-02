@@ -42,7 +42,7 @@ Este es un proyecto de tienda virtual simple utilizando **HTML, CSS y JavaScript
 
 - [Josue Campaña Mendoza]
 - [Jose Antonio Velasquez]
-- []
+- [Franchesco Castillo Ramírez]
 
 ## Enlace al Proyecto
 
